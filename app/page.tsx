@@ -1,5 +1,4 @@
 "use client";
-import "./globals.css";
 import Link from "next/link";
 import React, { ReactNode, useEffect, useState } from "react";
 import { BarChart3, Fuel, ShieldCheck, Zap } from "lucide-react";
@@ -256,7 +255,7 @@ const HeroCarousel = () => {
                 {slide.desc}
               </p>
               <div className="pt-8 flex gap-4">
-                <Link href="/cloud/dashboard">
+                <Link href="#">
                   <Button
                     size="lg"
                     className="h-14 px-8 text-lg font-bold bg-[#33B0F9] hover:bg-[#33B0F9]/90 text-white rounded-full transition-all shadow-lg hover:shadow-xl"
@@ -264,13 +263,15 @@ const HeroCarousel = () => {
                     Get Started
                   </Button>
                 </Link>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="h-14 px-8 text-lg font-bold text-black rounded-full"
-                >
-                  Contact Us
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="h-14 px-8 text-lg font-bold text-black rounded-full"
+                  >
+                    Contact Us
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
