@@ -7,8 +7,22 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Wifi, Touchpad, Cloud, CheckCircle2, Zap, Server } from "lucide-react";
-
+import {
+  Wifi,
+  Touchpad,
+  Cloud,
+  CheckCircle2,
+  Zap,
+  Server,
+  Activity,
+  BarChart3,
+  Droplets,
+  Settings,
+  ShieldCheck,
+  TrendingUp,
+  HeartHandshake,
+  Coins,
+} from "lucide-react";
 const Products = () => {
   return (
     <div className="min-h-screen px-20 bg-gray-50 text-gray-900 selection:bg-[#33B0F9] selection:text-white px-4 py-32 space-y-24">
@@ -23,6 +37,168 @@ const Products = () => {
           Advanced technology designed and manufactured by Digital Engineering
           Tech Ltd to streamline your fuel station operations.
         </p>
+      </div>
+
+      {/* Real-Time FMS Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#33B0F9]/10 to-transparent rounded-full blur-3xl -mr-32 -mt-32" />
+        <div className="relative z-10 space-y-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#33B0F9]/10 text-[#33B0F9] text-sm font-semibold border border-[#33B0F9]/20">
+            <Activity className="w-4 h-4" />
+            <span>Our Iconic Product</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold font-serif text-gray-900 leading-tight">
+            Real-Time Fuel Station <br />
+            <span className="text-[#33B0F9]">Management System</span>
+          </h2>
+          <p className="text-gray-600 leading-relaxed text-lg">
+            Based on a Wireless Network System, seamlessly connecting with your
+            fuel dispensers to control nozzles and provide direct views of each
+            nozzle's information. Manage your operations accurately and easily.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#33B0F9]/10 flex items-center justify-center text-[#33B0F9]">
+                <BarChart3 className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900">Sales Details</h4>
+                <p className="text-sm text-gray-500 mt-1">
+                  Easily view daily, weekly, and monthly fuel sales.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#33B0F9]/10 flex items-center justify-center text-[#33B0F9]">
+                <Droplets className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900">Fuel Tracking</h4>
+                <p className="text-sm text-gray-500 mt-1">
+                  Search balance and import history by fuel type.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#33B0F9]/10 flex items-center justify-center text-[#33B0F9]">
+                <Settings className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900">
+                  Price Adjustments
+                </h4>
+                <p className="text-sm text-gray-500 mt-1">
+                  Change daily fuel prices easily per fuel type.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#33B0F9]/10 flex items-center justify-center text-[#33B0F9]">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900">High Accuracy</h4>
+                <p className="text-sm text-gray-500 mt-1">
+                  Precise, real-time control and monitoring.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative w-full h-full min-h-[400px] flex items-center justify-center lg:justify-end z-10 mt-8 md:mt-0">
+          {/* Decorative elements representing the FMS dashboard */}
+          <div className="relative w-full max-w-md aspect-[4/3] bg-gradient-to-tr from-slate-900 to-slate-800 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden flex flex-col hover:shadow-[#33B0F9]/20 transition-shadow duration-500">
+            <div className="h-8 bg-slate-950 flex items-center px-4 gap-2 border-b border-slate-800">
+              <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
+              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
+              <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
+            </div>
+            <div className="p-6 flex-1 flex flex-col gap-4">
+              <div className="flex justify-between items-center">
+                <div className="w-1/3 h-4 bg-slate-700/50 rounded-full" />
+                <div className="w-8 h-8 rounded-full bg-[#33B0F9]/20 flex items-center justify-center">
+                  <Activity className="w-4 h-4 text-[#33B0F9]" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                  <div className="w-8 h-8 rounded-lg bg-blue-500/20 mb-3 flex items-center justify-center text-blue-400">
+                    <Droplets className="w-4 h-4" />
+                  </div>
+                  <div className="w-full h-2 bg-slate-700 rounded-full mb-2" />
+                  <div className="w-2/3 h-2 bg-slate-700 rounded-full" />
+                </div>
+                <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                  <div className="w-8 h-8 rounded-lg bg-green-500/20 mb-3 flex items-center justify-center text-green-400">
+                    <TrendingUp className="w-4 h-4" />
+                  </div>
+                  <div className="w-full h-2 bg-slate-700 rounded-full mb-2" />
+                  <div className="w-1/2 h-2 bg-slate-700 rounded-full" />
+                </div>
+              </div>
+              <div className="flex-1 bg-slate-800/50 rounded-xl border border-slate-700/50 p-4 relative overflow-hidden flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#33B0F9]/10 to-transparent" />
+                {/* Fake chart lines */}
+                <svg
+                  className="absolute inset-x-0 bottom-0 w-full h-[80%] opacity-80"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    d="M0,100 L0,60 Q20,80 40,40 T80,30 L100,50 L100,100 Z"
+                    fill="rgba(51,176,249,0.15)"
+                  />
+                  <path
+                    d="M0,60 Q20,80 40,40 T80,30 L100,50"
+                    fill="none"
+                    stroke="#33B0F9"
+                    strokeWidth="2.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Trust & Statistics Section */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col justify-center gap-2 hover:border-[#33B0F9]/30 transition-colors group cursor-default">
+          <div className="text-3xl md:text-4xl font-bold text-[#33B0F9] font-serif group-hover:scale-110 transition-transform">
+            2+
+          </div>
+          <div>
+            <div className="text-sm font-semibold text-gray-900">
+              Years of Refining
+            </div>
+            <div className="text-xs text-gray-500 mt-0.5">Fuel Management</div>
+          </div>
+        </div>
+        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col justify-center gap-2 hover:border-[#33B0F9]/30 transition-colors group cursor-default">
+          <div className="text-3xl md:text-4xl font-bold text-[#33B0F9] font-serif group-hover:scale-110 transition-transform">
+            30+
+          </div>
+          <div>
+            <div className="text-sm font-semibold text-gray-900">Trusted</div>
+            <div className="text-xs text-gray-500 mt-0.5">Fuel Stations</div>
+          </div>
+        </div>
+        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col items-center justify-center gap-2 hover:border-[#33B0F9]/30 transition-colors group cursor-default">
+          <div className="w-12 h-12 rounded-full bg-rose-50 flex items-center justify-center group-hover:bg-rose-100 transition-colors">
+            <HeartHandshake className="w-6 h-6 text-rose-500 group-hover:scale-110 transition-transform" />
+          </div>
+          <div className="text-sm font-semibold text-gray-900 mt-1">
+            Customers' Favorite
+          </div>
+        </div>
+        <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col items-center justify-center gap-2 hover:border-[#33B0F9]/30 transition-colors group cursor-default">
+          <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-100 transition-colors">
+            <Coins className="w-6 h-6 text-emerald-500 group-hover:scale-110 transition-transform" />
+          </div>
+          <div className="text-sm font-semibold text-gray-900 mt-1">
+            Cost Efficient
+          </div>
+        </div>
       </div>
 
       {/* Wireless Dongle Section */}
@@ -122,7 +298,6 @@ const Products = () => {
             ))}
           </ul>
         </div>
-        
       </div>
 
       {/* Cloud Service Section */}
