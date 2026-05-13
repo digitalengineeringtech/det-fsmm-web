@@ -205,7 +205,7 @@ const LandingHeader = () => {
                   <button className="text-gray-300 hover:text-white px-2">
                     <Search className="w-5 h-5" />
                   </button>
-                  <Link
+                  {/* <Link
                     target="_blank"
                     href="#"
                     // className="mr-1"
@@ -213,7 +213,7 @@ const LandingHeader = () => {
                     <Button className="bg-[#33B0F9] hover:bg-[#33B0F9]/90 text-white font-bold rounded-full px-6 py-5 shadow-lg shadow-[#33B0F9]/20 transition-all">
                       Go to Dashboard
                     </Button>
-                  </Link>
+                  </Link> */}
                 </div>
               </nav>
             </div>
